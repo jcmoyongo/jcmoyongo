@@ -40,7 +40,7 @@ function MailIcon(props) {
 export const metadata = {
   title: 'About',
   description:
-    'I’m Tino Moyongo. I live in West Palm Beach, where I automate the boring stuff so you don’t have to, and I solve problems with code before you even knew they existed.',
+    'Im Tino Moyongo. I live in West Palm Beach, where I automate the boring stuff so you don&#39;t have to, and I solve problems with code before you even knew they existed.',
 }
 
 export default function About() {
@@ -58,8 +58,8 @@ export default function About() {
           </div>
         </div>
         <div className="lg:order-first lg:row-span-2">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m Tino Moyongo. I live in West Palm Beach, where I automate the boring stuff so you don’t have to, and I solve problems with code before you even knew they existed.
+            <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+            Im Tino Moyongo. I live in West Palm Beach, where I automate the boring stuff so you don&#39;t have to, and I solve problems with code before you even knew they existed.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
@@ -67,11 +67,11 @@ export default function About() {
              and I was making my cassette player sing using BASIC!  
             </p>
             <p>
-              Yeah, that's right, code on a <em>tape</em>.  Then came college, 
-              a Computer Science degree, and a career that's been anything but boring.
+              Yeah, that&#39;s right, code on a <em>tape</em>.  Then came college, 
+              a Computer Science degree, and a career that&#39;s been anything but boring.
             </p>
             <p>
-              I've juggled software development, database wrangling, and even the 
+              I&#39;ve juggled software development, database wrangling, and even the 
               management gig—all while never stopping my own personal coding education. 
             </p>
             <p>
