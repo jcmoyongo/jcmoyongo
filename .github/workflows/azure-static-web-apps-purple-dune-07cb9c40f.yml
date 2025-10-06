@@ -14,6 +14,8 @@ jobs:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
     name: Build and Deploy Job
+    env:
+      NEXT_PUBLIC_SITE_URL: "https://purple-dune-07cb9c40f.1.azurestaticapps.net"
     steps:
       - uses: actions/checkout@v3
         with:
@@ -44,3 +46,4 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_PURPLE_DUNE_07CB9C40F }}
           action: "close"
+
