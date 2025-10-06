@@ -9,7 +9,8 @@ import {
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait-tino.jpg'
+// Use exact filename case: portrait-tino.JPG exists in the images folder
+import portraitImage from '@/images/portrait-tino.JPG'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
