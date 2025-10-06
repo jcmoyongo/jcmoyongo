@@ -40,3 +40,7 @@ To learn more about the technologies used in this site template, see the followi
 - [Next.js](https://nextjs.org/docs) - the official Next.js documentation
 - [Headless UI](https://headlessui.dev) - the official Headless UI documentation
 - [MDX](https://mdxjs.com) - the MDX documentation
+
+## Deployment
+
+See the top-level `DEPLOYMENT.md` for deployment and CI/CD instructions specific to this repository and the Azure Static Web App.
