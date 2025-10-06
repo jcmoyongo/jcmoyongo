@@ -3,11 +3,12 @@ import * as cheerio from 'cheerio'
 import { Feed } from 'feed'
 
 export async function GET(req) {
-  let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
-
-  if (!siteUrl) {
-    throw Error('Missing NEXT_PUBLIC_SITE_URL environment variable')
-  }
+  // Resolve a site URL with sensible fallbacks so the feed can be built
+  // both locally and in different hosting environments.
+  let siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : null) ||
+    'https://purple-dune-07cb9c40f.1.azurestaticapps.net'
 
   let author = {
     name: 'Tino Moyongo',
